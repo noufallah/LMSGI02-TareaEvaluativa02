@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novelas y Manga Anime</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
- <!-- Encabezado -->
-  <header>
-    <nav>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <nav>
         <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./categorias.html">Categorias</a></li>
-            <li><a href="./noticias.html">Noticias</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./categorias.html">Categorias</a></li>
+          <li><a href="./noticias.html">Noticias</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
+      </nav>
+    </header>
 
-    </nav>
- </header>
-    
+    <!-- Sección principal -->
+    <main>
+      <!-- Presentación + Imagen -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Presentación sobre novelas y Manga, Anime</h1>
+          <p>
+            Descubre un mundo de historias a través del manga, el anime y las
+            novelas ligeras. Aquí encontrarás recomendaciones organizadas por
+            géneros como acción, drama, comedia y slice of life, para que
+            siempre tengas una buena historia a mano.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="/img/presentacion.jpg" alt="Imagen de Presentación" />
+        </div>
+      </section>
+      <!-- Sección de categorías -->
+      <section class="categorias">
+        <h2>Categorías</h2>
+        <div class="category-grid">
+          <article class="category-card card-action">
+            <h3>Action</h3>
+            <button><a href="categoria-action.html">Ver más</a></button>
+          </article>
+          <article class="category-card card-drama">
+            <h3>Drama</h3>
+            <button>Ver más</button>
+          </article>
+          <article class="category-card card-comedy">
+            <h3>Comedy</h3>
+            <button>Ver más</button>
+          </article>
+          <article class="category-card card-sliceoflife">
+            <h3>Slice of Life</h3>
+            <button>Ver más</button>
+          </article>
+        </div>
+      </section>
+    </main>
 
-
-
-   <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 Novelas y Manga Anime. Todos los derechos reservados.</p>
-  </footer>
-</body>
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2025 Novelas y Manga Anime. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
