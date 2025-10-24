@@ -174,6 +174,18 @@ top: 0;
   background-image: url('../img/action.jpg');
 }
 
+.card-comedy {
+  background-image: url('../img/comedy.jpg');
+}
+
+.card-sliceoflife {
+  background-image: url('../img/slice-of-life.jpg');
+}
+
+.card-drama {
+  background-image: url('../img/drama.jpg');
+}
+
 
 /* --- Footer --- */
 footer {
@@ -250,3 +262,224 @@ footer {
 .btn:hover {
   background-color: #8a5a9e;
 }
+
+/* ================= CATEGORIA ACTION ================= */
+
+
+.cat-title-section h1{
+  text-align: center;
+  margin: 1rem;
+}
+
+.cat-grid {
+  margin: 2rem;
+display: flex;
+gap: 1rem;
+flex-direction: column;
+}
+
+
+
+
+.cat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.cat-item:hover {
+  transform: translateY(-5px);
+}
+
+.cat-item img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; 
+}
+
+.cat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cat-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.cat-btn {
+  display: inline-block;
+  margin-top: 9rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #5c3c92;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-self: flex-end; 
+}
+
+.cat-btn:hover {
+  background-color: #8a5a9e;
+}
+
+
+
+/* ================= NOTICIAS ================= */
+
+
+.not-title-section h1{
+  text-align: center;
+  margin: 1rem;
+}
+
+.not-grid {
+  margin: 2rem;
+display: flex;
+gap: 1rem;
+flex-direction: column;
+}
+
+
+
+
+.not-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 100rem;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.not-item:hover {
+  transform: translateY(-5px);
+}
+
+.not-item img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; 
+}
+
+.not-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.not-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.not-btn {
+  display: inline-block;
+  margin-top: 9rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #5c3c92;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-self: flex-end; 
+}
+
+.not-btn:hover {
+  background-color: #8a5a9e;
+}
+
+
+
+/* ================= RESPONSIVE - MÓVIL ================= */
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  /* Menú: en móvil, reduce el espacio de "Inicio" */
+  nav ul li:first-child {
+    margin-right: 1rem;
+  }
+
+  /* Sección Action: tarjetas en modo vertical */
+  .cat-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cat-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .cat-info {
+    text-align: center;
+  }
+
+  .cat-info p {
+    font-size: 1rem;
+  }
+
+  .cat-btn,
+  .btn {
+margin-left:10rem;
+margin-bottom:1rem;
+    width: 5 rem;
+    
+  }
+
+  /* Cuadrícula de categorías (página categorias.html) */
+  .category-grid-other {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .category-column {
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
