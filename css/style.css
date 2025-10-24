@@ -417,7 +417,170 @@ flex-direction: column;
   background-color: #8a5a9e;
 }
 
+/* ================= CONTACTO ================= */
 
+
+.contact-title {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+
+.contact-title h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.contact-form-section form {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #5c3c92;
+  outline: none;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5c3c92;
+ 
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1rem;
+}
+.contact-btn a {
+  text-decoration: none;
+   color: white;
+}
+
+
+
+/* ================= DETALLE ACTION ================= */
+
+.detail-page {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.detail-image {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.detail-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.detail-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.detail-title h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.detail-title p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.detail-description {
+  margin-bottom: 2rem;
+}
+
+.detail-description h2 {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: #5c3c92;
+}
+
+.detail-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.detail-description iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.detail-genres {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.genre-tag {
+  background-color: #5c3c92;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive móvil --- */
+@media (max-width: 768px) {
+  .detail-image img {
+    max-width: 100%;
+  }
+
+  .detail-description iframe {
+    max-width: 100%;
+  }
+
+  .detail-genres {
+    justify-content: center;
+  }
+}
 
 /* ================= RESPONSIVE - MÓVIL ================= */
 @media (max-width: 768px) {
