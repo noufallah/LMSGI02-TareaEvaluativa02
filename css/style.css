@@ -477,7 +477,7 @@ flex-direction: column;
   width: 100%;
   padding: 0.8rem;
   background-color: #5c3c92;
- 
+  color: white;
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -485,10 +485,10 @@ flex-direction: column;
   transition: background-color 0.3s;
   font-size: 1.1rem;
 }
-.contact-btn a {
+/* .contact-btn a {
   text-decoration: none;
-   color: white;
-}
+  
+} */
 
 
 
